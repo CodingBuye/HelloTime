@@ -1,0 +1,24 @@
+/* 第二步, 指定了div与img属性\样式 */
+div.xunzhuan{width: 350px;height: 190px;position: relative;margin: 200px auto;animation: roll 30s linear infinite;
+    transform-style: preserve-3d;  }
+img{width: 350px;height: 260px;opacity:0.8;position: absolute;}
+/* 第五步,定义动画,让div执行 , img相对定位 */
+@keyframes roll{
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+/* 	第三步,图片的转动 */
+img:nth-child(1){transform: rotateY(30deg) translateZ(700px);}
+img:nth-child(2){transform: rotateY(60deg)translateZ(700px);}
+img:nth-child(3){transform: rotateY(90deg)translateZ(700px);}
+img:nth-child(4){transform: rotateY(120deg)translateZ(700px);}
+img:nth-child(5){transform: rotateY(150deg)translateZ(700px);}
+img:nth-child(6){transform: rotateY(180deg)translateZ(700px);}
+img:nth-child(7){transform: rotateY(210deg)translateZ(700px);}
+img:nth-child(8){transform: rotateY(240deg)translateZ(700px);}
+img:nth-child(9){transform: rotateY(270deg)translateZ(700px);}
+img:nth-child(10){transform: rotateY(300deg)translateZ(700px);}
+img:nth-child(11){transform: rotateY(330deg)translateZ(700px);}
+img:nth-child(12){transform: rotateY(360deg)translateZ(700px);}
+/* 	第四步,将平面的东西拉成3的效果 */
+body{transform-style: preserve-3d;perspective: 4000px;}

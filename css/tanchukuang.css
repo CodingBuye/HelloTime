@@ -1,0 +1,20 @@
+#close{background:url(../images/img/close.png) no-repeat;width:30px;height:30px;cursor:pointer;position:absolute;right:5px;top:15px;text-indent:-999em;  }
+#mask{background-color: #8b6e5c;opacity:0.6;filter: alpha(opacity=60);position:absolute;left:0;top:0;z-index:1000;}
+#login{position:fixed;z-index:1001;}
+.loginCon{position:relative;width:670px;height:380px;background: rgba(254, 253, 253, 0.6);}
+.loginL{width:670px;height:60px;background: linear-gradient(#bc3f61,#7f293e,#bc3f61);}
+.loginL span{display: inline-block;height:60px;line-height:60px;margin-left:30px;font-size:22px;color:white;}
+.loginLL{width:44%;}
+.loginLLL{width:100%;padding:50px;float:left;}
+.loginLLM{width:10%;float:left;width:2px;height:80%;background-color:white;}
+.loginLLR{text-align:center;}
+.loginLLR p{margin:30px auto;font-size:20px;}
+.loginLLR img:hover{cursor:pointer;}
+
+.loginLLL img{float:left;}
+.loginLLL input[type='text']{width:240px;height:40px;float:left;}
+.loginLLL button{margin-top:15px;width:139px;height:45px;font-size:20px;}
+.loginLLL button:hover{cursor:pointer;}
+.loginLLL button[type='button']{color: #929a99;}
+.loginLLL button[type='submit']{background:green;color:#FFF;margin-left:10px;}
+#btnLogin{float:right;width:100px;height:40px;margin:20px 40px;background:#8FBDEB;font-size:21px;color:#FFF;}

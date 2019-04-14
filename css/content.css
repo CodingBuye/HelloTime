@@ -1,0 +1,4 @@
+.title_bar a{float:right;text-decoration: none;}
+div#body_wrapper .contentPage{width:1000px;height:600px;}
+div#body_wrapper .contentPage .content_bt h1{border-bottom: 1px solid #8fbdeb;}
+div#body_wrapper .contentPage .imgBar{margin-left: 200px;}

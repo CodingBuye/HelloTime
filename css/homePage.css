@@ -1,0 +1,16 @@
+*{margin:0px;padding:0px;}
+body{background:#0f1112;}
+.home-nav{width:100%;height:400px;margin:0 auto;background:url(../images/wwy5.png) no-repeat;border-bottom:2px double #FFF;}
+.home-nav .nav{
+    position:relative;
+    z-index:2;
+    width:732px;height:77px;
+    float:right;text-align:center;
+    margin-top:10px;margin-right:10px;
+    background: url('../images/navBg.png') left bottom no-repeat;
+}
+.home-nav .nav-left{float:left;position:relative;bottom:4px;left:15px;}
+.home-nav .home-logo{width:1160px;height:96px;margin:0px auto;padding-top:300px;}
+
+
+
