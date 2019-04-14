@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>联系我们</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/contactUs.css"/>
+    <script src="http://www.jiawin.com/wp-content/themes/javin/js/jquery.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+            $('#ads_close').click(function(e){
+                $('#ads_box').fadeOut();
+                e.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="contact">
+    <form class="contact_form" action="#" method="post" name="contact_form">
+        <ul>
+            <li>
+                <h2>联系我们</h2>
+                <span class="required_notification">* 表示必填项</span>
+            </li>
+            <li>
+                <p id="name"><label for="name">姓名:</label></p>
+                <input type="text"  placeholder="Please input your name" required />
+                <span class="form_hint">正确格式为：6~18个字符，可使用字母、数字、下划线，需以字母开头</span>
+            </li>
+            <li>
+                <p id="email"><label for="email">电子邮件:</label></p>
+                <input type="email" name="email" placeholder="Please input your email" required />
+                <span class="form_hint">正确格式为：designpattern@163.com</span>
+            </li>
+            <li>
+                <p id="website"><label for="website">网站:</label></p>
+                <input type="url" name="website" placeholder="please input your website" required pattern="(http|https)://.+"/>
+                <span class="form_hint">正确格式为：http://www.baidu.com</span>
+            </li>
+            <li>
+                <p id="message"><label for="message">留言:</label></p>
+                <textarea name="message" cols="40" rows="6" placeholder="" required ></textarea>
+            </li>
+            <li>
+                <button class="submit" type="submit">提交</button>&nbsp;&nbsp;
+                <a href="index.html">返回首页</a>
+            </li>
+        </ul>
+    </form>
+</div>
+</body>
+</html>

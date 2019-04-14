@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>入口</title>
+    <link href="css/enterlogo.css" rel="stylesheet" type="text/css"/>
+    <link href="css/xuanzhuan.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/anniutexiao.js"></script>
+    <style type="text/css">
+        .tipCon{position:fixed;color:#000;font-size:16px;text-align:center;bottom:-60px;right:0;}
+        .clickMe{height:30px;line-height:30px;background-color: #56072a;color:white;font-size:20px;}
+        .showPic{display:none;width:400px;height:300px;background: url("images/snow.gif") no-repeat;}
+        .clickMe{position:relative; }
+        .clickMe a{background:url(images/icon.jpg) no-repeat -399px -19px;width:16px;height:16px;display:none;position:absolute; top:5px; right:5px;}
+        .clickMe a:hover{background-position:-343px -19px;}
+    </style>
+</head>
+
+<body style="background-color:rgba(68,68,68,0.5)">
+    <div class="logoArea">
+        <div class="logoArea-left"><h1>你好！旧时光</h1> </div>
+        <div class="logoArea-right">
+            <span id="blink">做个最长情的时间匣，记到我们都变老......</span>
+        </div>
+    </div>
+    <!--旋转木马-->
+    <div class="xunzhuan">
+        <img src="images/1.jpg" alt="1"/>
+        <img src="images/2.jpg" alt="2"/>
+        <img src="images/3.jpg" alt="3"/>
+        <img src="images/4.jpg" alt="4"/>
+        <img src="images/5.jpg" alt="5"/>
+        <img src="images/6.jpg" alt="6"/>
+        <img src="images/8.jpg" alt="7"/>
+        <img src="images/9.jpg" alt="8"/>
+        <img src="images/10.jpg" alt="9"/>
+        <img src="images/11.jpg" alt="10"/>
+        <img src="images/12.jpg" alt="11"/>
+        <img src="images/13.jpg" alt="12"/>
+    </div>
+    <!--按钮特效-->
+    <div class="outerBox">
+        <div class="box">
+            <div class="link link-miss">
+                <span class="icon"></span>
+                <a href="index.html" class="button" data="点此进入首页">
+                    <span class="line line-top"></span>
+                    <span class="line line-right"></span>
+                    <span class="line line-bottom"></span>
+                    <span class="line line-left"></span>
+                    Homepage
+                </a>
+            </div>
+            <div class="link link-play">
+                <span class="icon"></span>
+                <a href="content.html" class="button" data="加入我们，一同分享">
+                    <span class="line line-top"></span>
+                    <span class="line line-right"></span>
+                    <span class="line line-bottom"></span>
+                    <span class="line line-left"></span>
+                    Join Us
+                </a>
+            </div>
+            <div class="link link-touch">
+                <span class="icon"></span>
+                <a href="piclist.html" class="button" data="查看旧时光精彩瞬间">
+                    <span class="line line-top"></span>
+                    <span class="line line-right"></span>
+                    <span class="line line-bottom"></span>
+                    <span class="line line-left"></span>
+                    Story Box
+                </a>
+            </div>
+            <div class="tip"><em></em><span></span></div>
+        </div>
+    </div>
+    <!--右下角广告-->
+    <div class="tipCon" id="tipCon">
+        <div class="clickMe" id="clickMe">点击有惊喜<a href="#" id="closeBtn"></a></div>
+        <div class="showPic" id="showPic"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    function changeColor(){
+        var color="yellow|white|#8ebdec";
+        color=color.split("|");
+        document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)];
+    }
+    setInterval("changeColor()",600);
+</script>
+<script type="text/javascript">
+    window.onload = function(){
+        var TipBox = document.getElementById("tipCon");
+        var ClickMe = document.getElementById("clickMe");
+        var showPic = document.getElementById("showPic");
+        var closeBtn = document.getElementById("closeBtn");
+        ClickMe.onmouseover = function(){
+            showPic.style.display = 'block';
+            closeBtn.style.display = 'block';
+        };
+        closeBtn.onclick = function(){
+            showPic.style.display = 'none';
+            closeBtn.style.display = 'none';
+        };
+    }
+</script>
+</html>
